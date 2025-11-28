@@ -1,0 +1,63 @@
+body
+{
+    margin: 0;
+    background-color: mediumpurple;
+}
+
+/* dependent */
+@media screen and (orientation: landscape)
+{
+    nav#leve-menu
+    {
+        float: left;
+        height: 100vh;
+    }
+    div#obsah
+    { /*aby nebyly 2 posuvniky*/
+        height: 100vh;
+        overflow: auto;
+    }
+}
+@media screen and (orientation: portrait)
+{
+    nav#leve-menu  ul li a
+    {
+        text-align: center;
+    }
+}
+
+/* main menu */
+nav#main-menu  ul li a
+{
+    text-decoration: none;
+    color: black;
+    border: gray outset 3px;
+    border-radius: 5px;
+    padding: 2px 5px;
+    display: block;
+    margin-bottom: 5px;
+}
+nav#main-menu  ul li a:hover
+{
+    background-color: lightblue;
+    border-style: inset;
+    color: grey;
+}
+nav#main-menu  ul li a.active /* Css pro tridu "aktivni"*/
+{
+    background-color: lightblue;
+    border-style: inset;
+}
+div#content
+{
+    background-color: lightblue;
+}
+div#content div
+{
+    padding: 15px;
+    text-align: justify;
+}
+div#content div p
+{
+    text-align: justify;
+}
