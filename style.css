@@ -1,9 +1,16 @@
 body
 {
-    margin: 0;
+    margin: 1cm;
     background-color: mediumpurple;
 }
-
+/* printing */
+@media print
+{
+    nav#leve-menu
+    {
+        display: none;
+    }
+}
 /* dependent */
 @media screen and (orientation: landscape)
 {
@@ -27,6 +34,12 @@ body
 }
 
 /* main menu */
+nav#leve-menu ul
+{
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 nav#main-menu  ul li a
 {
     text-decoration: none;
@@ -48,6 +61,7 @@ nav#main-menu  ul li a.active /* Css pro tridu "aktivni"*/
     background-color: lightblue;
     border-style: inset;
 }
+/* content */
 div#content
 {
     background-color: lightblue;
